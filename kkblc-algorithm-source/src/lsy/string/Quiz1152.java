@@ -8,14 +8,8 @@ import java.util.Arrays;
 public class Quiz1152 {
 
 	public static void main(String[] args) {
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		try {
-			String input = br.readLine();
-			int answer = solution(input.trim()); //앞뒤 공백 제거하고 parameter 넘겨줌
-			System.out.println(answer);
-		}catch(IOException e) {
-			e.printStackTrace();
-		}
+		Scanner scan = new Scanner(System.in);
+		System.out.println(scan.nextLine());
 	}
 	
 	public static int solution(String line) {
