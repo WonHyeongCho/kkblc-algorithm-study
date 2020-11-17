@@ -9,7 +9,7 @@ package bsw.string;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Main {
+public class Quiz8595 {
 
     public static long solution(int n,String line){
         long hiddenNumber=0;
