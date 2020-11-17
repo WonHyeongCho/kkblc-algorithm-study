@@ -6,7 +6,8 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashSet;
-
+//https://www.acmicpc.net/problem/1764
+//듣보잡
 public class Quiz1764 {
 
 	public static void main(String[] args) {
