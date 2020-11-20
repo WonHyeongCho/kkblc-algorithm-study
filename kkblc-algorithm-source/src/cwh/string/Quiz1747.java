@@ -4,6 +4,11 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+/*
+ * 링크: https://www.acmicpc.net/problem/1747
+ * 제목: 소수&팰린드롬
+ */
+
 public class Quiz1747 {
     public static void main(String[] args) {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

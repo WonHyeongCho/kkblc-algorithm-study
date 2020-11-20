@@ -5,6 +5,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Stack;
 
+/*
+ * 링크: https://www.acmicpc.net/problem/4949
+ * 제목: 균형잡힌 세상
+ */
+
 public class Quiz4949 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
