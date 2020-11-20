@@ -43,9 +43,7 @@ public class Quiz9935 {
         if(index == 0) {
             System.out.println("FRULA");
         } else {
-            for(int i = 0; i < index; i++) {
-                System.out.print(result[i]);
-            }
+            System.out.println(String.valueOf(result));
         }
     }
 
