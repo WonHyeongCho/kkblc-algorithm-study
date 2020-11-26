@@ -11,7 +11,7 @@ public class Quiz8595 {
     }
 
     static int solution() {
-
+    	System.out.println("test");
         return 0;
     }
 }
