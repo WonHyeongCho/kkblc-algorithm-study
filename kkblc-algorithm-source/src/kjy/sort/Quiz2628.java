@@ -5,7 +5,7 @@ import java.util.Scanner;
  * 종이자르기: https://www.acmicpc.net/problem/2628
  * 세로 max, 가로max 각각 구해서 곱하면 최대넓이가 될듯
 */
-public class Bj2628 {
+public class Quiz2628 {
 	public static void main(String[] args) {
 	     
 		int col=0, row=0, maxCol = 0, maxRow = 0, cnt = 0;

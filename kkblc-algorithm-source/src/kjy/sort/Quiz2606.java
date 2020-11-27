@@ -13,7 +13,7 @@ import java.util.Scanner;
  *  que가 완전히 빌때가지 계속반복
  *  
  */
-public class Bj2606 {
+public class Quiz2606 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		Deque<Integer> que = new ArrayDeque<>();

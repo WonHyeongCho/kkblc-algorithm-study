@@ -15,7 +15,7 @@ import java.util.Scanner;
  *  15 9 / 27
  *  24 / 51
 */
-public class Bj1917 {
+public class Quiz1917 {
 	static int cnt = 0;
 	public static void main(String[] args) {
 		ArrayList<Integer> list = new ArrayList<>();
