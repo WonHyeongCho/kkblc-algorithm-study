@@ -6,7 +6,7 @@ import java.util.Scanner;
  * 대소문자 구분없이 카운트!
  * 
  */
-public class Bj1157 {
+public class Quiz1157 {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
