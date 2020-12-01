@@ -35,7 +35,8 @@ public class Quiz2493 {
 					if(temp[1]<now) {
 						stack.pop(); //stack 안에는 현재값 보다 큰 아이가 남아있음
 					}else {
-						sb.append(temp[0]+blank); //현재값 보다 더 큰 탑 있으면 스톱
+						sb.append(temp[0]);
+						sb.append(blank);//현재값 보다 더 큰 탑 있으면 스톱
 						break;
 					}
 				}
