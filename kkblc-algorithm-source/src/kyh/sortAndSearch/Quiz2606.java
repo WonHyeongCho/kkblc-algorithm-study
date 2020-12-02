@@ -1,10 +1,23 @@
 package kyh.sortAndSearch;
 
+/*3주차*/
 
 /*
  * 링크: https://www.acmicpc.net/problem/2606
  * 제목: 바이러스
  */
+
+/* 풀이
+ *  bfs, dfs로 풀수 있다. 나는 dfs로 품
+ *  어차피 1~N까지의 노드 중 1과 연결된 부분만 찾으면 된다.
+ *  방문했는지, 연결되어있는지 확인하면된다.
+ * */
+
+/* 총평
+ * 오랜만의 dfs라 조금 당황했따.
+ * 간단한 dfs라 다행이었다.
+ * dfs는 들어가는 조건, 탈출조건을 잘 작성해야한다.
+ * */
 
 
 import java.io.BufferedReader;
