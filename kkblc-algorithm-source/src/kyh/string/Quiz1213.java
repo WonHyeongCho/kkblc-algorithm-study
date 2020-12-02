@@ -1,4 +1,4 @@
-package com.company.baek.문자열;
+package kyh.string;
 
 import java.io.BufferedReader;
 import java.io.IOException;
