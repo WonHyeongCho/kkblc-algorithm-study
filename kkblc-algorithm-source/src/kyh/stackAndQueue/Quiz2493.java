@@ -10,6 +10,20 @@ import java.util.Stack;
  * 제목: 탑
  */
 
+/* 풀이
+ *  기본적으로 탑은 stack에 쌓는다.
+ *  N번째 탑이 N+1번째 탑보다 길이가 낮으면
+ *  N번째 이하탑들은 전부 제거. N+1탑만 stack에 넣어둔다
+ *  N번째 탑이 N+1번째 탑보다 길이가 높으면
+ *  N번째 탑과 N+1번째 탑 모두 stack에 쌓는다.
+ * */
+
+/* 총평
+ * 처음에는 왜 stack을 써야하는지 몰랐다.
+ * 배열로 for loop 2번돌리면 시간초과난다.
+ * */
+
+
 public class Quiz2493 {
     public static void main(String args[]) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

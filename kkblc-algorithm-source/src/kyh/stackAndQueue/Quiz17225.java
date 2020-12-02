@@ -57,6 +57,18 @@ public class Quiz17225 {
             }
         }
 
+        // 0번 index에는 b(0) or q(1), 1번 인덱스에는 끝나는 시간.
+        PriorityQueue<int[]> pq = new PriorityQueue<>(new Comparator<int[]>() {
+            @Override
+            public int compare(int[] o1, int[] o2) {
+                if(o1[1]==o2[1]){
+                    return o1[0]-o2[0];
+                }else{
+                    return o1[1]-o2[1];
+                }
+            }
+        });
+
         //curTime은 현재 시간
         //startTime은 포장을 시작하는ㅅ이간
         //packNum은 포장해야하는 갯수.
