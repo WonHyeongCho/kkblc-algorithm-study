@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Queue/Queue.iml" filepath="$PROJECT_DIR$/Queue/Queue.iml" />
       <module fileurl="file://$PROJECT_DIR$/bsw.iml" filepath="$PROJECT_DIR$/bsw.iml" />
       <module fileurl="file://$PROJECT_DIR$/sortExplore/sortExplore.iml" filepath="$PROJECT_DIR$/sortExplore/sortExplore.iml" />
     </modules>
