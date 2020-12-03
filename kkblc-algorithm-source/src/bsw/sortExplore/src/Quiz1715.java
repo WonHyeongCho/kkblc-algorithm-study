@@ -33,24 +33,24 @@ public class Quiz1715 {
         return answer;
     }
 
-    public static void main(String[] args) {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-
-        try{
-            int lenght = Integer.parseInt(bufferedReader.readLine());
-            List <Integer> array = new ArrayList<>();
-            for(int i=0;i<lenght;i++){
-                int d = Integer.parseInt(bufferedReader.readLine());
-                array.add(d);
-            }
-            bufferedReader.close();
-
-            System.out.println(solution(lenght,array));
-        }catch (Exception e){
-            e.printStackTrace();
-
-        }
-    }
+//    public static void main(String[] args) {
+//        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+//
+//        try{
+//            int lenght = Integer.parseInt(bufferedReader.readLine());
+//            List <Integer> array = new ArrayList<>();
+//            for(int i=0;i<lenght;i++){
+//                int d = Integer.parseInt(bufferedReader.readLine());
+//                array.add(d);
+//            }
+//            bufferedReader.close();
+//
+//            System.out.println(solution(lenght,array));
+//        }catch (Exception e){
+//            e.printStackTrace();
+//
+//        }
+//    }
 //  List 로 놓고 풀었을때는 답이 안된다. 우선 순위 큐를 꼭 사용을 해야한다.
 
     public static void main(String[] args) {
