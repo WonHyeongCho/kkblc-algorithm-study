@@ -42,25 +42,25 @@ public class Quiz2493 {
         }
         */
 
-//        try{
-//            int count = Integer.parseInt(bufferedReader.readLine());
-//            StringTokenizer st = new StringTokenizer(bufferedReader.readLine()," ");
-//            Stack<Integer> stack = new Stack<>();
-//            while(st.hasMoreTokens()){
-//
+        try{
+            int count = Integer.parseInt(bufferedReader.readLine());
+            StringTokenizer st = new StringTokenizer(bufferedReader.readLine()," ");
+            Stack<Integer> stack = new Stack<>();
+            while(st.hasMoreTokens()){
+
 //                if(st.nextToken() < stack.peek()){
 //
 //                }
 //                stack.pop(st.nextToken());
-//
-//
-//
-//            }
-//
+
+
+
+            }
+
 //            Stack<Integer> stack = new Stack<>();
-//
-//        }catch (Exception e){
-//
-//        }
+
+        }catch (Exception e){
+
+        }
     }
 }
