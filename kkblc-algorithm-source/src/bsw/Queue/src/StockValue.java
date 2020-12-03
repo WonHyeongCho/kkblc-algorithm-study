@@ -3,48 +3,47 @@
 * https://programmers.co.kr/learn/courses/30/lessons/42584
 * */
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Stack;
+import java.util.*;
 
 public class StockValue {
 
     public int[] solution(int[] prices) {
-        int len = prices.length;
-        int [] answer = new int [len];
+       int [] answer = new int[prices.length];
+       Stack<Stock> stack = new Stack<>();
 
-        Stack<Integer> stack = new Stack<Integer>();
-        List<Integer> lists = new ArrayList<Integer>();
-        //array는 길이가 정해져있다.
-
-        for(int i=1;i<prices.length;i++){
-
-            while(!stack.empty() && prices[i] < prices[stack.peek()]){
-                int startIdx = stack.pop();
-                answer[startIdx] = i - startIdx;
-            }
-            stack.push(i);
-        }
-
-        while (!stack.empty()){
-            int startIdx = stack.pop();
-            answer[startIdx] = i - startIdx-1;
-        }
-
-
-        answer = Arrays.asList(lists);
-
-
-
-
+       for(int i=0;i<prices.length;i++){
+           int price = prices[i];
+           if(!stack.isEmpty()){
+               while (!stack.isEmpty() && stack.peek().price > price){
+                   Stock st = stack.pop();
+                   answer[st.time -1] = i+1 - st.time;
+               }
+               stack.push(new Stock(price, i+1));
+           }else{
+               stack.push((new Stock(price,i+1)));
+           }
+       }
+       while (!stack.isEmpty()){
+           Stock st = stack.pop();
+           answer[st.time -1] = prices.length -st.time;
+       }
+        System.out.println(answer);
         return answer;
+
+    }
+
+    class Stock {
+
+        int price, time;
+        public Stock(int price, int time){
+            this.price = price;
+            this.time = time;
+        }
     }
 
     public static void main(String[] args) {
-
         StockValue bts = new StockValue();
         int [] prices = {1, 2, 3, 2, 3};
         bts.solution(prices);
-
     }
 }
