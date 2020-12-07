@@ -23,8 +23,6 @@ public class QuizStrOrder {
             answer[j] = arr.get(j).substring(1, arr.get(j).length());
         }
 
-
-
         return answer;
     }
 
