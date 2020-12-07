@@ -9,7 +9,7 @@ public class Quiz2493 {
 	/*
 	 * 백준 2493(탑): https://www.acmicpc.net/problem/2493 
 	 오른쪽에서 왼쪽으로 레이져를 쏴서 걸리는곳에서 레이져수신. 계산할때는 왼쪽에서 오른쪽으로 가면서 stack에 타워값을 insert해주는데
-	 이때 현재 stack의 위에값보다 다음에 넣을지 비교하는값이 크다면 이전꺼는 pop해준다(더 큰값을 만날때까지) 그리고 push
+	 이때 현재 stack의 top보다 비교하는값이 크다면  pop해준다  그리고 더큰값을 push
 	 
 	 */
 	public static void main(String[] args) {
@@ -30,7 +30,7 @@ public class Quiz2493 {
 		inputs = new long[cnt+1];
 		answers = new long[cnt+1];
 		
-		
+		//입력
 		StringTokenizer st = new StringTokenizer(str);
 		int curIdx = 1;
 		while(st.hasMoreTokens()) {
