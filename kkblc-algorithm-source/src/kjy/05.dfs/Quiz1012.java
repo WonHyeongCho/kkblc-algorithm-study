@@ -1,5 +1,7 @@
 import java.util.Scanner;
-
+/*
+백준1012: https://www.acmicpc.net/problem/1303
+*/
 public class Quiz1012 {
 	static boolean [][] map; //이미 방문했는지 또는 배추가 있는지 표시하기 위한 배열
 	static int[] moveRow = {-1,0,1,0}; //위, 오, 아, 왼
