@@ -4,6 +4,11 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+/*
+ * 링크: https://www.acmicpc.net/problem/1012
+ * 제목: 유기농 배추
+ */
+
 public class Quiz1012 {
     static int T; // 테스트 케이스
     static int M; // 가로 길이
