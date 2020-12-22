@@ -30,7 +30,7 @@ import java.util.Queue;
  * */
 
 
-public class Quiz16236_2 {
+public class Quiz16236 {
 
     static int[][] arr;
     static int arrSize;
@@ -141,21 +141,24 @@ public class Quiz16236_2 {
                 int ty = tempY+dy[i];
 
                 //이동할수 있는지 체크
+                //조건 1. 배열 크기 안이어야함
+                //조건 2. 상어크기보다 같거나 작으면 이동 가능
+                //조건 3. 방문하지 않은곳이면 이동 가능
                 if( tx >=0 && tx <arrSize && ty >=0 && ty <arrSize //배열 크기 벗어나면 안됨.
                         && arr[tx][ty]<=currentSharkSize //나와 크기가 같거나 작으면 이동 가능
                         && distance[tx][ty] ==0 // 방문하지 않은곳 방문
 
                 ){
-                    // distance배열을 활용하여 시작 점 부터 현재 지점까지의 거리를 확인 가능
                     distance[tx][ty] = distance[tempX][tempY]+1;
-                    // System.out.println("이동 : "+(tx+1) + "/"+(ty+1));
 
-                    //먹음
-                    //해당 자리에 물고기가 있는지를 체크
+                    //먹을 수 있는지 체크
+                    //조건 1. 물고기 크기가 상어크기보다 작으면 먹을 수 있음
+                    //조건 2. 해당 위치까지의 거리가 minDist보다 작으면 이동 가능
                     if(0 < arr[tx][ty] && arr[tx][ty] < currentSharkSize
                             && distance[tx][ty] <= minDist ){
-                        //x값이 작을수록 위,
-                        //y값이 작을수록 왼
+                        //x값이 작을수록 위, y값이 작을수록 왼
+                        //1. X값(실제로는 세로축)이 현재 값(minX)보다 작으면 위치 바로 바꿈.
+                        //2. X값과 현재 값이 같으면 Y값을 비교. Y값이 현재 값(minY)보다 작으면 위치 바꿈.
                         if(minX > tx){
                             minX = tx;
                             minY = ty;
@@ -178,6 +181,7 @@ public class Quiz16236_2 {
         }
 
     }
+    //distance 초기화 함수
     static void initDistance(){
         distance = new int[arrSize][arrSize];
     }
