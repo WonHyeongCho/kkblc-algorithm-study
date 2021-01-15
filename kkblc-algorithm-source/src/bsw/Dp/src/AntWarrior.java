@@ -24,32 +24,35 @@
 import java.util.*;
 
 public class AntWarrior {
-//
-//     int static Foodbank(int [] arr){
-//        //N개의 식량창고
-//        int N = d.length;
-//        //해설
-//        //a(i) = i번쨰 식량창고까지의 최적의 해(얻을 수 있는 식량의 최대값)
-//        //ex) {1,3,1,5}
-//        //DP 테이블의 값 a(0) = 1 a(1)= 3 a(2) = 3 a(3)=8
-//
-//        //a(i) = i번째 식량창고까지의 최적의 해(얻을 수 있는 식량의 최대값)
-//        //k(i) = i번째 식량창고에 있는 식량의 양
-//
-//        //점화식 a(i) = max(a(i-1),a(i-2)+k(i))
-//        //한 칸 이상 떨어진 식량창고는 항상 털 수 있으므로(i-3)번째 이하는 고려할 필요가 없다.
-//
-//        int [] dp = new int[arr.length]; //DP테이블을 저장할 공간
-//        dp[0] = arr[0];
-//        dp[1] = Math.max(arr[0],arr[1]);
-//
-//        for(int i=2;i<n;i++){
-//            dp[i]= Math.max(dp[i-1],dp[i-2]+arr[i]);
-//        }
-//
-//        return 1;
-//
-//    }
+
+     int static Foodbank(int [] arr){
+        //N개의 식량창고
+        int N = d.length;
+        //해설
+        //a(i) = i번쨰 식량창고까지의 최적의 해(얻을 수 있는 식량의 최대값)
+        //ex) {1,3,1,5}
+        //DP 테이블의 값 a(0) = 1 a(1)= 3 a(2) = 3 a(3)=8
+
+        //용희
+        //dp(i) = i번째 식량창고까지의 최적의 해(얻을 수 있는 식량의 최대값)
+        //a(i) = i번째 식량창고에 있는 식량의 양
+
+
+        //dp[i] = max(dp[i-1] , dp[i-2] + a[i])
+        //점화식 a(i) = max(a(i-1),a(i-2)+k(i))
+        //한 칸 이상 떨어진 식량창고는 항상 털 수 있으므로(i-3)번째 이하는 고려할 필요가 없다.
+
+        int [] dp = new int[arr.length]; //DP테이블을 저장할 공간
+        dp[0] = arr[0];
+        dp[1] = Math.max(arr[0],arr[1]);
+
+        for(int i=2;i<n;i++){
+            dp[i]= Math.max(dp[i-1],dp[i-2]+arr[i]);
+        }
+
+        return 1;
+
+    }
 
 
 
