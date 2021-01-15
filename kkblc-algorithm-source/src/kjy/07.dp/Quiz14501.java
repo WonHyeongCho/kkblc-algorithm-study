@@ -33,7 +33,7 @@ public class Quiz14501 {
 			if(i+timeArr[i]>N+1) {
 				priceArr[i] = priceArr[i+1]; //해당일자에 일을 못하면 이전까지의 최대값을 그대로 복사.
 			}else{
-				priceArr[i] = Math.max(priceArr[i+1], priceArr[i]+priceArr[i+timeArr[i]]); // i일얻는 최대수익 = MAX(i일 선택하지않는경우수익 vs i일 선택할경우 수익)
+				priceArr[i] = Math.max(priceArr[i+1], priceArr[i]+priceArr[i+timeArr[i]]); // i일얻는 최대수익 = MAX(i일 선택하지않는경우수익 vsi일 선택할경우 수익)
 			}
 			//System.out.println("priceArr["+i+"] = "+priceArr[i]);
 		}
