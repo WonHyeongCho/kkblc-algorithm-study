@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="01.string"/>
+	<classpathentry kind="src" path="02.sort"/>
+	<classpathentry kind="src" path="03.stack&amp;queue"/>
+	<classpathentry kind="src" path="04.tree&amp;graph"/>
+	<classpathentry kind="src" path="05.dfs"/>
+	<classpathentry kind="src" path="07.dp"/>
+	<classpathentry kind="src" path="08.devide&amp;conquer"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
