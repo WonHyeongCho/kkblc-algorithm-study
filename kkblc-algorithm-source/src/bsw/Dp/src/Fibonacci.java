@@ -1,7 +1,8 @@
 /*
 * 탑다운 보텀업 방식 차이
 *
-* */
+* *//*
+
 import java.util.*;
 public class Fibonacci {
     //탑 다운 방식 [재귀방식]
@@ -28,3 +29,4 @@ public class Fibonacci {
     }
 
 }
+*/
