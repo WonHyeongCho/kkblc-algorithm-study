@@ -11,7 +11,7 @@ import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class Quiz14501 { //바텀업 방식으로 풀이됨.
-    
+
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         //일하는 날을 계산
@@ -34,6 +34,7 @@ public class Quiz14501 { //바텀업 방식으로 풀이됨.
         // dp(5) 5일차에는 30이다.
         // dp(6) 6일차에는 45이다.
         // dp(7) 7일차에는 45이다.
+        // 점화식 dp[i] = max(dp[i+1], dp[i+t[i]]+ p[i])
         int max = 0; //최대한 번 돈을 뜻한다.
         int [] dp = new int[N+6];
 

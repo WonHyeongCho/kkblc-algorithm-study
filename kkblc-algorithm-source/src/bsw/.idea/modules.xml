@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/DivideConquer/DivideConquer.iml" filepath="$PROJECT_DIR$/DivideConquer/DivideConquer.iml" />
       <module fileurl="file://$PROJECT_DIR$/Dp/Dp.iml" filepath="$PROJECT_DIR$/Dp/Dp.iml" />
       <module fileurl="file://$PROJECT_DIR$/Queue/Queue.iml" filepath="$PROJECT_DIR$/Queue/Queue.iml" />
       <module fileurl="file://$PROJECT_DIR$/bfs/bfs.iml" filepath="$PROJECT_DIR$/bfs/bfs.iml" />
       <module fileurl="file://$PROJECT_DIR$/bsw.iml" filepath="$PROJECT_DIR$/bsw.iml" />
       <module fileurl="file://$PROJECT_DIR$/dfs/dfs.iml" filepath="$PROJECT_DIR$/dfs/dfs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/greedy/greedy.iml" filepath="$PROJECT_DIR$/greedy/greedy.iml" />
       <module fileurl="file://$PROJECT_DIR$/sortExplore/sortExplore.iml" filepath="$PROJECT_DIR$/sortExplore/sortExplore.iml" />
     </modules>
   </component>
