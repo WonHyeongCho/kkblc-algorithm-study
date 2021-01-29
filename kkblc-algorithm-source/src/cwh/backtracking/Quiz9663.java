@@ -1,7 +1,5 @@
 package cwh.backtracking;
 
-import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
-
 import java.util.Scanner;
 
 /*
