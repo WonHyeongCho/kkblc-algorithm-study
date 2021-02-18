@@ -1,3 +1,6 @@
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.*;
 
 public class Quiz2630 {
@@ -6,15 +9,23 @@ public class Quiz2630 {
     static int[][] paper;
 
 
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int N = sc.nextInt();
+    public static void main(String[] args) throws Exception{
+        /* 읽어 봅시다~~ 첫번째에 N*N 개의 상자를 놓아둔다 */
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        int N = Integer.parseInt(bufferedReader.readLine());
 
         paper = new int[N][N];
-        for (int i = 0; i < N; i++)
+        StringTokenizer str;
+        /** 좋아 세팅을 했어요~!
+          **/
+        for (int i = 0; i < N; i++) {
+            str = new StringTokenizer(bufferedReader.readLine());
             for (int j = 0; j < N; j++)
-                paper[i][j] = sc.nextInt();
-
+                paper[i][j] =Integer.parseInt(str.nextToken());
+        }
+        /**
+         * 이제 세팅을 한 것을 divide하는 작업이 필요해요!
+         * */
         divide(N, 0, 0);
         for (int n : cnt)
             System.out.println(n);
