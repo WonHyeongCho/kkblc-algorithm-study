@@ -12,5 +12,6 @@
 	<classpathentry kind="src" path="10.backtracking"/>
 	<classpathentry kind="src" path="11.dp_2"/>
 	<classpathentry kind="src" path="12.devide&amp;conquer2"/>
+	<classpathentry kind="src" path="13.greedy&amp;backtracking"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
