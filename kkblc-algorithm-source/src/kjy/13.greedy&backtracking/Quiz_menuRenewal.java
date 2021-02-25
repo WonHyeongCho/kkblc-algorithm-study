@@ -8,7 +8,7 @@ public class Quiz_menuRenewal {
 	 * 풀이: hashMap을 사용해서 각 문자열을 재귀적으로 조합해서 key값으로 저장시키면서,
 	 *      중복값이 있을경우 value+=1해준다.
 	 *      마지막에 value>=2인것들을 string배열에 담아준다
-	 * 
+	 * 		그중에서 각 개수별로 가장 많이 선택된 조합을 세트로 정한다.
 	 */
 	static HashMap<String,Integer> map = new HashMap<String,Integer>();
 	static String curStr;
